@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>ServletCookies</display-name>
+  <servlet>
+    <servlet-name>loginVailate</servlet-name>
+    <servlet-class>com.mccoy.SetCookie</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>logincookie</servlet-name>
+  	<servlet-class>com.mccoy.GettingCookies</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>logincookie</servlet-name>
+  <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>loginVailate</servlet-name>
+    <url-pattern>/validate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Cookiedata</servlet-name>
+    <servlet-class>com.mccoy.GetCookie</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cookiedata</servlet-name>
+    <url-pattern>/GetCookie</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
